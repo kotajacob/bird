@@ -54,8 +54,16 @@ function love.update(dt)
     end
 end
 
-function love.keypressed(key)
-    playerBird:keypressed() -- jump the bird
+function love.keypressed()
+    playerBird:jump() -- jump the bird
+end
+
+function love.mousepressed()
+    playerBird:jump() -- jump the bird
+end
+
+function love.touchpressed()
+	playerBird:jump() -- jump the bird
 end
 
 function love.draw()

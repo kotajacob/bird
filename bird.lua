@@ -42,7 +42,7 @@ function Bird:update(gravity, controlPipe, dt)
     end
 end
 
-function Bird:keypressed()
+function Bird:jump()
     -- make the bird jump
     if self.y > 0 then -- if the bird is below the top of the map and has pressed a button make then jump
         self.vspeed = -272
